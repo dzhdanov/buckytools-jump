@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-import . "github.com/jjneely/buckytools"
+import . "github.com/deniszh/buckytools"
 
 // httpClient is a cached http.Client. Use GetHTTP() to setup and return.
 var httpClient *http.Client

@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-import "github.com/jjneely/buckytools/hashing"
-import . "github.com/jjneely/buckytools"
+import "github.com/deniszh/buckytools/hashing"
+import . "github.com/deniszh/buckytools"
 
 type ClusterConfig struct {
 	// Port is the port remote buckyd daemons listen on

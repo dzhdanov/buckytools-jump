@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Jack Neely <jjneely@42lines.net>
 Build-Depends: debhelper (>= 8.0.0), golang (>= 1.4), dh-golang
 Standards-Version: 3.9.4
-Homepage: https://github.com/jjneely/buckytools
+Homepage: https://github.com/deniszh/buckytools
 #Vcs-Git: git://git.debian.org/collab-maint/buckytools.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/buckytools.git;a=summary
 

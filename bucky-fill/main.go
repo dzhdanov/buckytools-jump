@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-import "github.com/jjneely/buckytools"
-import "github.com/jjneely/buckytools/fill"
+import "github.com/deniszh/buckytools"
+import "github.com/deniszh/buckytools/fill"
 
 func usage() {
 	fmt.Printf("%s <src> <dst>\n", os.Args[0])

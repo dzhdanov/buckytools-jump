@@ -13,7 +13,7 @@ import (
 	"sync"
 )
 
-import "github.com/jjneely/buckytools/metrics"
+import "github.com/deniszh/buckytools/metrics"
 
 var tarPrefix string
 

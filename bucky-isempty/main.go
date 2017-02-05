@@ -11,9 +11,9 @@ import (
 )
 
 import (
-	"github.com/jjneely/buckytools"
-	"github.com/jjneely/buckytools/metrics"
-	"github.com/jjneely/buckytools/whisper"
+	"github.com/deniszh/buckytools"
+	"github.com/deniszh/buckytools/metrics"
+	"github.com/deniszh/buckytools/whisper"
 )
 
 // Command Line Flags

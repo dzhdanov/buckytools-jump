@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-import . "github.com/jjneely/buckytools"
+import . "github.com/deniszh/buckytools"
 
 func init() {
 	usage := "[options] <metric expression>"

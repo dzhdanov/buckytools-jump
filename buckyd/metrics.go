@@ -13,9 +13,9 @@ import (
 	"time"
 )
 
-import . "github.com/jjneely/buckytools"
-import . "github.com/jjneely/buckytools/metrics"
-import "github.com/jjneely/buckytools/fill"
+import . "github.com/deniszh/buckytools"
+import . "github.com/deniszh/buckytools/metrics"
+import "github.com/deniszh/buckytools/fill"
 
 // listMetrics retrieves a list of metrics on the localhost and sends
 // it to the client.
