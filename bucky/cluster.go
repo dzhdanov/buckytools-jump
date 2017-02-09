@@ -107,8 +107,9 @@ func GetClusterConfig(hostport string) (*ClusterConfig, error) {
 // built the list from.
 func isHealthy(master *JSONRingType, ring []*JSONRingType) bool {
 	// XXX: Take replicas into account
+	log.Printf("Cluster isHealthy 0: %s =! %s", master, ring)
 	if len(master.Nodes) != len(ring)+1 {
-		log.Printf("Cluster isHealthy: %s: %s", master, ring)
+		log.Printf("Cluster isHealthy 1: %d =! %d", len(master.Nodes), len(ring)+1)
 		return false
 	}
 
@@ -117,16 +118,16 @@ func isHealthy(master *JSONRingType, ring []*JSONRingType) bool {
 		// Order, host:instance pair, must be the same.  You configured
 		// your cluster with a CM tool, right?
 		if master.Algo != v.Algo {
-			log.Printf("Cluster isHealthy: %s: %s", master, ring)
+			log.Printf("Cluster isHealthy 2: %s != %s", master.Algo, v.Algo)
 			return false
 		}
 		if len(v.Nodes) != len(master.Nodes) {
-			log.Printf("Cluster isHealthy: %s: %s", master, ring)
+			log.Printf("Cluster isHealthy 3: %d != %d", len(v.Nodes), len(master.Nodes))
 			return false
 		}
 		for j, _ := range v.Nodes {
 			if v.Nodes[j] != master.Nodes[j] {
-				log.Printf("Cluster isHealthy: %s: %s", master, ring)
+				log.Printf("Cluster isHealthy 4: %d : %s != %s", j, v.Nodes[j], master.Nodes[j])
 				return false
 			}
 		}
