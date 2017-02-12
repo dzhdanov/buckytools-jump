@@ -1,6 +1,27 @@
 Go Buckytools
 ==============
 
+BEWARE!
+This is my ugly hack of @jjneely's Buckytools!
+
+Original repo is https://github.com/jjneely/buckytools
+
+I just moved support of jump_hash to master branch and backported Jack's fixes.
+
+For using jump_fnv1a hash use `--hash jump_fnv1a` cli parameter of buckyd.
+Please note that instances are ignored in this mode (contrary of carbon-c-relay),
+so please sort your hosts in ascending order to get compatible results!
+
+If you're using sparse whisper files - do not forget to add `--sparse` to buckyd too.
+
+I'm planning to create PR in original repo and remove this hack.
+
+Also debian packaging is broken in this version, please do not use it.
+
+-- @deniszh
+
+---
+
 Tools for managing large consistent hashing Graphite clusters.
 
 Buckminster (Bucky) Fuller once said,
