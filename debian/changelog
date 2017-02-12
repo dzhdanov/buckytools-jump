@@ -1,7 +1,9 @@
-buckytools (0.1.6-2) unstable; urgency=medium
+buckytools (0.1.7-4) unstable; urgency=medium
 
   * jump hash
-  * fixes
+  * backport of fixes from master
+  * bucky-sparsify
+  * sparse support
 
  -- Jack Neely <jjneely@42lines.net>  Thu, 29 Oct 2015 15:26:41 -0400
 
